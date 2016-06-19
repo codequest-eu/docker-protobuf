@@ -1,11 +1,11 @@
-FROM alpine:3.2
+FROM gliderlabs/alpine:latest
 
-MAINTAINER Oleksii Fedorov <waterlink000@gmail.com>
+MAINTAINER codequest team <hello@codequest.com>
 
 ADD . /src
 WORKDIR /src
 
-ENV PROTOBUF_TAG v3.0.0-alpha-3.1
+ENV PROTOBUF_TAG v3.0.0-beta-3.2
 
 RUN ./build.sh
 
