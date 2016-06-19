@@ -2,7 +2,7 @@
 
 set -e
 
-PACKAGES="git build-base autoconf automake libtool"
+PACKAGES="git build-base autoconf automake curl libtool"
 
 apk add --update $PACKAGES
 
